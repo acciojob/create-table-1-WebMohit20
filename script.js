@@ -1,13 +1,10 @@
- let table = document.querySelector("#sampleTable");
-
 function insert_Row() {
     //Write your code here
-	let tr = document.createElement("tr");
-	table.prepend(tr);
-	let cell1 = tr.insertCell();
-	cell1.innerText = "New Cell1"
-	let cell2 = tr.insertCell();
+    let table = document.querySelector("#sampleTable")
+	let newRow = table.insertRow(0)
+	let cell1 = newRow.insertCell()
+	let cell2 = newRow.insertCell()
+	cell1.innerText="New Cell1"
 	cell2.innerText = "New Cell2"
-	
   
 }
